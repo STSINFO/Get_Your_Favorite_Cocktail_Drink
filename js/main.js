@@ -5,6 +5,7 @@ function getYourDrink() {
   const drink = document.querySelector("input").value;
   const url = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${drink}`;
   const container = document.querySelector(".grid-container");
+  container.innerHTML = "";
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
