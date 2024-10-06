@@ -19,33 +19,59 @@ body h1 {
   font-size: 4rem;
 }
 
-button,
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.search {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  height: 3rem;
+  /* border: 1px solid black; */
+  border-radius: 1.5rem;
+  width: 50%;
+}
+.search input {
+  width: 80%;
+  padding: 0 0.5rem;
+}
+
+.search button {
+  width: 20%;
+  font-size: 2rem;
+}
+
+/* button,
 input {
   padding: 1.6rem 3.2rem;
 }
 
 button {
   font-size: 1.8rem;
-}
+} */
 
 .grid-container {
   width: 130rem;
   margin: 5rem auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 2rem;
-  row-gap: 1rem;
+  gap: 3rem;
 }
 
 .grid-container div {
   padding: 3rem 0;
   box-shadow: 0 0 0 1 black;
-  /* border: 0.1rem solid black; */
+  height: 35rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
   overflow: hidden;
 }
 
